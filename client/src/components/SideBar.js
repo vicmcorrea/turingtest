@@ -17,10 +17,7 @@ const SideBar = () => {
    * Toggles the dark mode.
    */
   const clearChat = () => clearMessages()
-  const SignOut = () => {
-    clearChat()
-    window.sessionStorage.clear()
-  }
+  
 
   return (
     <section className={` ${open ? "w-72" : "w-20 "} sidebar`}>
@@ -29,7 +26,7 @@ const SideBar = () => {
           <span className='w-8 h-8'><img src={bot} alt="" /></span>
         </div>
         <h1 className={`sidebar__app-title ${!open && "scale-0 hidden"}`}>
-          GPT3-Chatbot
+          The Turing - Chat
         </h1>
         <div className='sidebar__btn-close' onClick={() => setOpen(!open)}>
           {open ? <MdClose className='sidebar__btn-icon' /> : <MdMenu className='sidebar__btn-icon' />}
@@ -48,21 +45,14 @@ const SideBar = () => {
       <div className="nav__bottom">
         <DarkMode open={open} />
         <div className="nav">
-          <a href='https://github.com/EyuCoder/chatgpt-clone' className="nav__item">
+          <a href='https://theturing.com.br/' className="nav__item">
             <div className="nav__icons">
               <MdOutlineQuestionAnswer />
             </div>
-            <h1 className={`${!open && "hidden"}`}>Update & FAQ</h1>
+            <h1 className={`${!open && "hidden"}`}>Contato</h1>
           </a>
         </div>
-        <div className="nav">
-          <span className="nav__item" onClick={SignOut}>
-            <div className="nav__icons">
-              <MdOutlineLogout />
-            </div>
-            <h1 className={`${!open && "hidden"}`}>Log out</h1>
-          </span>
-        </div>
+        
       </div>
     </section >
   )
