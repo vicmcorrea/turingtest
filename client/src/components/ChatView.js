@@ -52,7 +52,7 @@ const ChatView = () => {
     const newMsg = formValue
     const aiModel = selected
 
-    const BASE_URL = process.env.REACT_APP_BASE_URL
+    const BASE_URL = "https://turingbatepapo.onrender.com/"
     const PATH = aiModel === options[0] ? 'davinci' : 'dalle'
     const POST_URL = BASE_URL + PATH
 
