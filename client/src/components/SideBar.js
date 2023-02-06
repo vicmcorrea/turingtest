@@ -38,7 +38,7 @@ const SideBar = () => {
           <div className='nav__icons'>
             <MdAdd />
           </div>
-          <h1 className={`${!open && "hidden"}`}>New chat</h1>
+          <h1 className={`${!open && "hidden"}`}>Resetar Conversa</h1>
         </span>
       </div>
 
