@@ -81,8 +81,8 @@ app.post('/davinci', async (req, res) => {
       temperature: 0.5,
       max_tokens: 500,
       top_p: 0.5,
-      frequency_penalty: 0.5,
-      presence_penalty: 0.2,
+      frequency_penalty: 0.2,
+      presence_penalty: 0.6,
     })
 
     console.log(response.data.choices[0].text)
