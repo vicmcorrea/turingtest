@@ -93,7 +93,7 @@ app.post('/davinci', async (req, res) => {
       Q: ${cleanPrompt}.
       A: `,
       temperature: 0.7,
-      max_tokens: 350,
+      max_tokens: 500,
       top_p: 0.7,
       frequency_penalty: 0.2,
       presence_penalty: 0.6,
