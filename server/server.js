@@ -61,7 +61,7 @@ app.post('/davinci', async (req, res) => {
     console.log(cleanPrompt)
 
     const response = await openai.createCompletion({
-      model: 'text-davinci-003',
+      model: 'text-curie-001',
       prompt: `
       Objetivo:
 
@@ -84,7 +84,7 @@ app.post('/davinci', async (req, res) => {
       Agir como um amigo.
 
       Exemplo de conversa:
-      
+      Q: Ola.
       A: Olá, como está se sentindo hoje?
       Q: Estou me sentindo um pouco estressado com o trabalho.
       A: Ah, sinto muito em ouvir isso. Gostaria de conversar mais sobre isso?
