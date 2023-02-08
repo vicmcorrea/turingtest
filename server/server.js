@@ -61,7 +61,7 @@ app.post('/davinci', async (req, res) => {
     console.log(cleanPrompt)
 
     const response = await openai.createCompletion({
-      model: 'text-curie-001',
+      model: 'text-davinci-003',
       prompt: `
       Objetivo:
 
